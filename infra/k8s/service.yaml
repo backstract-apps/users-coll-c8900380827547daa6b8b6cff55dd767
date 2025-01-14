@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: users-coll-c8900380827547daa6b8b6cff55dd767-srv
+spec:
+  selector:
+    app: users-coll-c8900380827547daa6b8b6cff55dd767
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
